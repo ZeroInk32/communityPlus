@@ -1,0 +1,5 @@
+<script>
+  fetch("/latestURL")
+    .then(response => response.text())
+    .then(data => location.href = "https://www.ccw.site/gandi?gext=" + data);
+</script>
